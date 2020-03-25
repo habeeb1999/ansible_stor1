@@ -1,1 +1,0 @@
-# ansible_stor1
