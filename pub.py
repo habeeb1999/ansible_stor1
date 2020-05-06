@@ -36,7 +36,7 @@ def thermometer():
   for x in range(10):
 
         humidity, temperature = Adafruit_DHT.read_retry(11, 4)  # GPIO27 (BCM notation)
-       send_Time=datetime.datetime.now()
+        send_Time=datetime.datetime.now()
 
         sensor_data = ["TEMP = ",(temperature),"HUM = ",(humidity)]
 
@@ -55,7 +55,7 @@ def thermometer():
             conn.request("POST", "/update", params, headers)  
 
             response = conn.getresponse()  
-           data = response.read()  
+            data = response.read()  
 
 
         except:  
