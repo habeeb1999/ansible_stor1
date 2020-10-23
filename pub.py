@@ -33,7 +33,7 @@ humidity, temperature = Adafruit_DHT.read_retry(11, 4)  # GPIO27 (BCM notation)
 
 def thermometer():  
 
-  for x in range(15):
+  for x in range(10):
 
         humidity, temperature = Adafruit_DHT.read_retry(11, 4)  # GPIO27 (BCM notation)
         send_Time=datetime.datetime.now()
