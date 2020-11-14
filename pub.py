@@ -19,7 +19,7 @@ import Adafruit_DHT
 
 client = mqtt.Client()
 
-client.connect("192.168.1.108",1883,60)
+client.connect("192.168.43.117",1883,60)
 
 # Define delay between readings
 
